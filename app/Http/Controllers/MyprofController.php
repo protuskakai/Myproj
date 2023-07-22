@@ -79,7 +79,7 @@ class MyprofController extends Controller
     {
 		
 	   // return view('accomplishments');
-	   $tittle="Accomplishments";
+	   $tittle="Major Accomplishments";
 		 return view('accomplishments',['tittle'=>$tittle]);
     }
 	 public function awards()

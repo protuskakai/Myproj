@@ -5,7 +5,7 @@
         <div class="grid grid-cols-1 gap-2 mt-1   sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1">
 		
 		
-		          <div class="px-5 py-1">
+		          <div class="px-5 py-1 leading-none">
  <pre>                 
 					<p class="text-gray-700"><b>2016</b> - Use of GPS for water utilities data collection
 (Kenya Water Institute)</p>

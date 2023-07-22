@@ -5,7 +5,7 @@
 	<meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add to cart</title>
+    <title>MY CURRICULUM VITAE</title>
     <link href="./css/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	
@@ -65,31 +65,28 @@
                         </button>
                     </div>
                 </div>
-				 <img src="{{url('/images/northrift logo4.jpg')}}" alt="Image"/>
-                <nav  class="p-2 mt-4 text-white bg-green-400 sm:flex sm:justify-center sm:items-center">
+				 <img src="{{url('/images/mylogo.jpg')}}" alt="Image"/>
+                <nav  class="p-2 mt-4 text-white bg-green-500 sm:flex sm:justify-center sm:items-center">
                     <div class="flex flex-col sm:flex-row ">
 					    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('aboutme')}}">About Me</a>
                         <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('personal')}}">Personal Details</a>
-						   <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('education')}}">Education</a>
-						      <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('profession')}}">Professional Background</a>
-							     <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('employment')}}">Employment History</a>
-								    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('accomplishments')}}">Major Accomplishments</a>
+					    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('education')}}">Education</a>
+					    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('profession')}}">Professional Background</a>
+					    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('employment')}}">Employment History</a>
+					    <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('accomplishments')}}">Major Accomplishments</a>
                         <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('experience')}}">Areas of Experience</a>
 						<a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('skills')}}">ICT Skills</a>
 						<a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('awards')}}">Awards/Recognitions</a>
 						<a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('hobbies')}}">Hobbies</a>
-						<a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('referees')}}">Referees</a>
-						
+						<a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('referees')}}">Referees</a>	
                         <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="{{ route('contacts')}}">Contacts</a>
-                        
-						
                     </div>
                 </nav>
             </div>
         </header>
         
         <main class="my-8">
-		  <div class="container px-6 mx-auto">
+		  <div class="container px-16 mx-auto">
 	 
         <h3 class="text-2xl font-medium text-gray-700 text-blue-700  border-b-8 border-x-4
   border-y-4 border-blue-200 rounded-md shadow-md">{{ $tittle }}</h3>
@@ -99,7 +96,7 @@
 	
     </div>
 	<div class="container px-6 py-3 mx-auto">
-		<footer  class="p-2 mt-2 text-white bg-green-400 sm:flex sm:justify-center sm:items-center">
+		<footer  class="p-2 mt-2 text-white bg-green-500 sm:flex sm:justify-center sm:items-center">
                 <div class="flex flex-col sm:flex-row ">
                 <a class="mt-3 hover:underline sm:mx-3 sm:mt-0" href="/"> &copy; 2023 Protus M. Kakai. All rights reserved.</a> 
         </footer>

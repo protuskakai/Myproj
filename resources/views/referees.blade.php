@@ -3,9 +3,9 @@
 	
 			
          <div class="grid grid-cols-1 gap-6 mt-6   sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
+           <div class="w-full max-w-sm mx-auto drop-shadow-2xl border-b-4 border-r-1 border-t-2 border-blue-200 px-16  overflow-hidden bg-fuchsia-300  rounded-md shadow-md">
            
-           
-                <div class="px-5 py-3">
+                <div class="px-5 py-3 ">
                     <h6 class="text-gray-700 "><b>1. Mr. Amos Mulievi</b></h6>
 					<p class="text-gray-700">    ICT Executive,
 The Tea Board of Kenya,</p>
@@ -15,8 +15,9 @@ The Tea Board of Kenya,</p>
                    
                   
 	<hr>				
-	
+	            </div>
                 </div>   
+				 <div class="w-full max-w-sm mx-auto drop-shadow-2xl border-b-4 border-r-1 border-t-2 border-blue-200 px-16  overflow-hidden bg-fuchsia-300  rounded-md shadow-md">
 				<div class="px-5 py-3">
                     <h6 class="text-gray-700 "><b>2. Mr. Peter Wasike</b></h6>
 					<p class="text-gray-700">    ICT Supervisor,
@@ -27,8 +28,9 @@ Nzoia Water Services Ltd,</p>
                    
                   
 	<hr>				
-	
+	            </div>
                 </div>   
+				 <div class="w-full max-w-sm mx-auto drop-shadow-2xl border-b-4 border-r-1 border-t-2 border-blue-200 px-16  overflow-hidden bg-fuchsia-300  rounded-md shadow-md">
 				<div class="px-5 py-3">
                     <h6 class="text-gray-700 "><b>3. Mr. Stephen Cheboi</b></h6>
 					<p class="text-gray-700">    Head of ICT,
@@ -39,7 +41,7 @@ Kenya Forest Services,</p>
                    
                   
 	<hr>				
-	
+	         </div>
                 </div>   
             </div>
 			

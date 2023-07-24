@@ -3,65 +3,16 @@
 namespace App\Http\Controllers;
 
 //use App\Models\Product;
+use Config;
 
 use Illuminate\Http\Request;
 use \Illuminate\Support\Str;
 
 class MyprofController extends Controller
 {
-    public function productList(Request $request)
-    {
-		
-		
-	 if(is_null( $request->cat))
-	 {
-		 // echo $cat;
-		  $cat = "all";
-	 }else
-	 {
-		 $cat = $request->cat;
-		//  
-	 }
-	 $all="all";
-	// echo strcmp(trim($cat),trim($all));
-	// $cnt = (strcmp($cat, trim(strval("all"))
-//	echo "cat ".$cat."   alls  ".$all;
-	 if($cat == $all)
-	//(	Str::equals($cat, $all))
-		 
-	 {	 
-   //     echo $request->cat;
-       $products = Product::all();
-	 }else
-	 {
-		// echo $request->cat;
-		// $products = Product::find($cat);
-		
-		//$products = Product::where('cat',$cat);
-		//$products = Product::table('products')->where('cat', $cat);
-		$products = Product::where('category',$cat)->get(); 
-	 }	 
-	/*
-	 foreach($products as $product)
-	 {
-		 echo $product->name;
-	 }
-    */ 
-	   $cnt= $products->count();
-	  
-      return view('products', compact('products','cat','cnt'));
-    }
 	
 	
-	 public function update(Request $request)
-    {
-		$data = array("a" => "Apple", "b" => "Ball", "c" => "Cat");
-
-		header("Content-Type: application/json");
-		//return json_encode($data);
-	//	return "sddddfdf";
-	    return response()->json(['status' => "success"]);
-    }
+    
 	 public function aboutme()
     {
 		$tittle="About Me";
@@ -113,10 +64,12 @@ class MyprofController extends Controller
     }
 	 public function hobbies()
     {
-		
+		echo config('myvars.oclor');
+	  $m_color = "    bg-red-100    " ; //= Config('myvars.color');
 	    //return view('hobbies');
 		$tittle="Hobbies";
-		return view('hobbies',['tittle'=>$tittle]);
+	//	echo $m_color;
+		return view('hobbies',['tittle'=>$tittle],['color'=>$m_color]);
     }
 	 public function personal()
     {
